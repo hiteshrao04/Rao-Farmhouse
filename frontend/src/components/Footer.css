@@ -1,0 +1,108 @@
+.footer {
+  background: var(--brand-dark);
+  color: white;
+  padding: var(--spacing-giant) 0 var(--spacing-large) 0;
+  margin-top: var(--spacing-giant);
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--spacing-large);
+  margin-bottom: var(--spacing-large);
+}
+
+.footer-section h3,
+.footer-section h4 {
+  color: var(--brand-primary);
+  margin-bottom: var(--spacing-small);
+  font-size: 1.25rem;
+}
+
+.footer-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: var(--spacing-small);
+}
+
+.footer-logo-icon {
+  color: var(--brand-primary);
+}
+
+.footer-description {
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.6;
+  margin-bottom: var(--spacing-small);
+}
+
+.footer-tagline {
+  color: var(--brand-primary);
+  margin-top: var(--spacing-small);
+}
+
+.footer-links {
+  list-style: none;
+}
+
+.footer-links li {
+  margin-bottom: 12px;
+}
+
+.footer-links a {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+  color: var(--brand-primary);
+}
+
+.footer-contact {
+  list-style: none;
+}
+
+.footer-contact li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.footer-contact a {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer-contact a:hover {
+  color: var(--brand-primary);
+}
+
+.season-badge {
+  background: rgba(211, 255, 98, 0.1);
+  border: 2px solid var(--brand-primary);
+  border-radius: 16px;
+  padding: var(--spacing-small);
+  text-align: center;
+}
+
+.season-badge strong {
+  color: var(--brand-primary);
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: var(--spacing-medium);
+  text-align: center;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+@media (max-width: 781px) {
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-medium);
+  }
+}

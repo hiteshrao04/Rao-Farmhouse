@@ -1,0 +1,303 @@
+.home-page {
+  padding-top: 96px;
+}
+
+/* Hero Section */
+.hero-section {
+  position: relative;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, rgba(211, 255, 98, 0.1) 0%, rgba(250, 255, 238, 0.8) 100%);
+  padding: var(--spacing-giant) var(--spacing-small);
+  overflow: hidden;
+}
+
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><circle cx="100" cy="100" r="3" fill="%23004534" opacity="0.1"/><circle cx="300" cy="150" r="2" fill="%23004534" opacity="0.1"/><circle cx="500" cy="80" r="3" fill="%23004534" opacity="0.1"/><circle cx="700" cy="200" r="2" fill="%23004534" opacity="0.1"/><circle cx="900" cy="120" r="3" fill="%23004534" opacity="0.1"/><circle cx="1100" cy="180" r="2" fill="%23004534" opacity="0.1"/></svg>');
+  opacity: 0.3;
+}
+
+.hero-content {
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  max-width: 900px;
+}
+
+.hero-subtitle {
+  margin: var(--spacing-medium) 0;
+  color: var(--text-secondary);
+}
+
+.hero-description {
+  margin: var(--spacing-small) 0 var(--spacing-large) 0;
+  color: var(--text-secondary);
+}
+
+.hero-buttons {
+  display: flex;
+  gap: var(--spacing-small);
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Trust Section */
+.trust-section {
+  padding: var(--spacing-giant) 0;
+  background: var(--bg-card);
+}
+
+.trust-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--spacing-large);
+}
+
+.trust-card {
+  background: white;
+  border-radius: 24px;
+  padding: var(--spacing-large);
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 69, 52, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.trust-card:hover {
+  transform: translateY(-4px);
+}
+
+.trust-icon {
+  color: var(--brand-dark);
+  margin-bottom: var(--spacing-small);
+}
+
+/* Farm Story Section */
+.farm-story-section {
+  padding: var(--spacing-giant) 0;
+}
+
+.farm-story-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-xl);
+  align-items: center;
+}
+
+.farm-story-image .placeholder-image {
+  background: var(--bg-subtle);
+  border-radius: 24px;
+  aspect-ratio: 4/3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-light);
+}
+
+.farm-story-content p {
+  margin: var(--spacing-small) 0;
+}
+
+.farm-story-content .btn-primary {
+  margin-top: var(--spacing-medium);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Product Preview Section */
+.product-preview-section {
+  padding: var(--spacing-giant) 0;
+  background: var(--bg-card);
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: var(--spacing-xl);
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--spacing-large);
+}
+
+.product-badge {
+  background: var(--brand-primary);
+  color: var(--brand-dark);
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 600;
+  display: inline-block;
+  margin-bottom: var(--spacing-small);
+}
+
+.product-badge.best {
+  background: var(--brand-dark);
+  color: var(--brand-primary);
+}
+
+.product-image-placeholder {
+  background: var(--bg-subtle);
+  border-radius: 16px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: var(--spacing-small) 0;
+  color: var(--text-light);
+}
+
+.product-price {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--brand-dark);
+  margin: var(--spacing-small) 0;
+}
+
+.full-width {
+  width: 100%;
+  text-align: center;
+  margin-top: var(--spacing-small);
+}
+
+.best-value {
+  border: 3px solid var(--brand-primary);
+  position: relative;
+}
+
+/* How It Works Section */
+.how-it-works-section {
+  padding: var(--spacing-giant) 0;
+}
+
+.steps-container {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: var(--spacing-small);
+  align-items: center;
+}
+
+.step-card {
+  background: var(--bg-card);
+  border-radius: 24px;
+  padding: var(--spacing-large);
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 69, 52, 0.1);
+  grid-column: span 1.5;
+}
+
+.step-number {
+  background: var(--brand-primary);
+  color: var(--brand-dark);
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0 auto var(--spacing-small) auto;
+}
+
+.step-arrow {
+  font-size: 32px;
+  color: var(--brand-dark);
+  text-align: center;
+  grid-column: span 0.5;
+}
+
+/* Scarcity Section */
+.scarcity-section {
+  padding: var(--spacing-giant) 0;
+  background: linear-gradient(135deg, rgba(211, 255, 98, 0.2) 0%, rgba(250, 250, 255, 0.5) 100%);
+}
+
+.scarcity-content {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.scarcity-icon {
+  color: var(--brand-dark);
+  margin-bottom: var(--spacing-small);
+}
+
+.scarcity-content p {
+  margin: var(--spacing-medium) 0 var(--spacing-large) 0;
+}
+
+/* Testimonials Section */
+.testimonials-section {
+  padding: var(--spacing-giant) 0;
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--spacing-large);
+}
+
+.testimonial-card {
+  text-align: center;
+}
+
+.stars {
+  display: flex;
+  gap: 4px;
+  justify-content: center;
+  margin-bottom: var(--spacing-small);
+}
+
+.testimonial-text {
+  font-style: italic;
+  margin: var(--spacing-small) 0;
+}
+
+.customer-name {
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+/* Responsive */
+@media (max-width: 781px) {
+  .home-page {
+    padding-top: 64px;
+  }
+  
+  .hero-section {
+    min-height: 60vh;
+    padding: var(--spacing-xl) var(--spacing-small);
+  }
+  
+  .hero-buttons {
+    flex-direction: column;
+  }
+  
+  .farm-story-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .steps-container {
+    grid-template-columns: 1fr;
+  }
+  
+  .step-card {
+    grid-column: span 1;
+  }
+  
+  .step-arrow {
+    display: none;
+  }
+}
