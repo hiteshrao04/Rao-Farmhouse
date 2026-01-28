@@ -47,12 +47,12 @@ const Contact = () => {
             <div className="network-card contact-card animated hover-lift">
               <MessageCircle size={48} className="contact-icon" />
               <h3 className="heading-3">WhatsApp</h3>
-              <a 
-                href="https://wa.me/919876543210" 
-                target="_blank" 
+              <a
+                href="https://wa.me/919876543210"
+                target="_blank"
                 rel="noopener noreferrer"
-                className="contact-link body-large"
-              >
+                className="contact-link body-large">
+
                 Chat with Us
               </a>
               <p className="body-small">Quick response guaranteed</p>
@@ -61,8 +61,8 @@ const Contact = () => {
             <div className="network-card contact-card animated hover-lift">
               <Mail size={48} className="contact-icon" />
               <h3 className="heading-3">Email</h3>
-              <a href="mailto:hello@raofarmhouse.com" className="contact-link body-large">
-                hello@raofarmhouse.com
+              <a href="mailto:hello@raofarmhouse.com" className="contact-link body-large">raofarmhouse04@gmail.com
+
               </a>
               <p className="body-small">Response within 24 hours</p>
             </div>
@@ -113,14 +113,14 @@ const Contact = () => {
               Stay updated with our daily farm activities, harvest updates, and seasonal availability
             </p>
             <div className="social-links">
-              <a 
-                href="https://instagram.com/raofarmhouse" 
-                target="_blank" 
+              <a
+                href="https://instagram.com/raofarmhouse"
+                target="_blank"
                 rel="noopener noreferrer"
-                className="social-link"
-              >
+                className="social-link">
+
                 <Instagram size={32} />
-                <span>@raofarmhouse</span>
+                <span>@raofarmhouseisharwal</span>
               </a>
             </div>
           </div>
@@ -196,8 +196,8 @@ const Contact = () => {
           </div>
         </div>
       </section>
-    </div>
-  );
+    </div>);
+
 };
 
 export default Contact;
