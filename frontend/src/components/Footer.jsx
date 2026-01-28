@@ -38,7 +38,7 @@ const Footer = () => {
             <ul className="footer-contact">
               <li>
                 <Phone size={18} />
-                <span>+91 98765 43210</span>
+                <span>+91 93062  80687</span>
               </li>
               <li>
                 <Mail size={18} />
@@ -46,7 +46,7 @@ const Footer = () => {
               </li>
               <li>
                 <MapPin size={18} />
-                <span>Punjab, India</span>
+                <span>Isharwal, Haryana, India</span>
               </li>
               <li>
                 <Instagram size={18} />
@@ -69,8 +69,8 @@ const Footer = () => {
           <p>&copy; 2025 Rao Farmhouse | Farm Fresh • Organic • Seasonal</p>
         </div>
       </div>
-    </footer>
-  );
+    </footer>);
+
 };
 
 export default Footer;
